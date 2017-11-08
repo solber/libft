@@ -1,0 +1,34 @@
+TODO :
+
+
+
+DONE :
+
+• memset
+• bzero
+• memcpy
+• memccpy
+• strlen
+• atoi
+• strcpy
+• strncpy
+• strstr
+• strcmp
+• strncmp
+• toupper
+• tolower
+• strcat
+• strncat
+• strlcat
+• strdup
+• isalpha
+• isdigit
+• isalnum
+• isascii
+• isprint
+• memmove
+• memchr - pointeur null
+• memcmp
+• strchr
+• strrchr
+• strnstr
