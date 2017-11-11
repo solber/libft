@@ -10,7 +10,7 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= libft.a
+NAME		= libft
 CFLAGS		= -Wall -Werror -Wextra -I. -c
 FILES		= ft_memset.c \
 				ft_bzero.c \
@@ -57,7 +57,18 @@ FILES		= ft_memset.c \
 				ft_strsplit.c \
 				ft_putchar.c \
 				ft_putstr.c \
-				ft_putnbr.c
+				ft_putnbr.c \
+				ft_itoa.c \
+				ft_putendl.c \
+				ft_putchar_fd.c \
+				ft_putstr_fd.c \
+				ft_putendl_fd.c \
+				ft_putnbr_fd.c \
+				ft_lstnew.c \
+				ft_lstdelone.c \
+				ft_lstdel.c \
+				ft_lstadd.c \
+				ft_lstiter.c
 OBJ			= $(FILES:%.c=%.o)
  
 all: $(NAME)
@@ -69,8 +80,8 @@ $(OBJ): $(FILES)
 
 $(NAME): $(OBJ)
 	@echo "\x1B[31mCreating .a ..."
-	@ar rc $(NAME) $(OBJ)
-	@ranlib $(NAME)
+	@ar rc $(NAME).a $(OBJ)
+	@ranlib $(NAME).a
 	@echo "\x1B[32mDone !" 
 
 clean:
@@ -80,7 +91,7 @@ clean:
  
 fclean: clean
 	@echo "\x1B[31mCreating .a ..."
-	@rm -f $(NAME)
+	@rm -f $(NAME).a
 	@echo "\x1B[32mDone !"
 
 re: fclean all
